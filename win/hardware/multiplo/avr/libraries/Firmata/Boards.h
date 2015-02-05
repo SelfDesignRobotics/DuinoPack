@@ -276,7 +276,6 @@ writePort(port, value, bitmask):  Write an 8 bit port.
 #define PIN_TO_PWM(p)           PIN_TO_DIGITAL(p)
 #define PIN_TO_SERVO(p)         ((p) - 2)
 
-
 #elif defined (DUINOBOT_V2X)
 #define TOTAL_ANALOG_PINS       7
 #define TOTAL_PINS              30
@@ -285,9 +284,9 @@ writePort(port, value, bitmask):  Write an 8 bit port.
 #define IS_PIN_ANALOG(p)        ((p) >= 14 && (p) < 14 + TOTAL_ANALOG_PINS)
 #define IS_PIN_PWM(p)           digitalPinHasPWM(p)
 #define IS_PIN_SERVO(p)         ((p) >= 0 && (p) < MAX_SERVOS)
-#define IS_PIN_I2C(p)           ((p) == 4 || (p) == 5)
+#define IS_PIN_I2C(p)           ((p) == 2 || (p) == 3)
 #define PIN_TO_DIGITAL(p)       (p)
-#define PIN_TO_ANALOG(p)        ((p) - 1)
+#define PIN_TO_ANALOG(p)        ((p) - 14)
 #define PIN_TO_PWM(p)           PIN_TO_DIGITAL(p)
 #define PIN_TO_SERVO(p)         ((p) - 2)
 
