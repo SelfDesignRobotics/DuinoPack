@@ -2,6 +2,8 @@
 
 The Duinobot controller is an Arduino clone; it can be programmed with the tools available for any Arduino controller board.  These instructions are for setting up the Duinobot V2.3 controller and the modified Arduino IDE from this git.
 
+*Note:* This IDE should also work with earlier versions of the Duinobot controller but this has not been tested.
+
 ##CDC/HID USB mode
 
 The USB port on the Duinobot V2.3 controller can be setup in CDC or HID mode.  There are advantages to either mode but if you plan to use the Duinobot controller with the Arduino IDE you want to set it up in CDC mode.  By default the controller is set to HID mode; to change the mode a jumper needs to be installed connecting the two pins labelled CDC on the front face of the board.  The rest of these instructions assume the controller is set to CDC USB mode.
