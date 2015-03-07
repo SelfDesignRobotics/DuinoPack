@@ -27,8 +27,8 @@ extern "C"{
 //        TX0 (D 1) PD1 15 |        | 26 PC4 (D  6) TDO
 //  INT0 RX1 (D30?) PD2 16 |        | 25 PC3 (D  5) TMS
 //  INT1 TX1 (D31?) PD3 17 |        | 24 PC2 (D  4) TCK
-//     PWM 1B (D28) PD4 18 |        | 23 PC1 (D  3) SDA
-//     PWM 1A (D27) PD5 19 |        | 22 PC0 (D  2) SCL
+//     PWM 1B (D28) PD4 18 |        | 23 PC1 (D  3) SDA (I2C)
+//     PWM 1A (D27) PD5 19 |        | 22 PC0 (D  2) SCL (I2C)
 //     PWM 2B (D 9) PD6 20 |        | 21 PD7 (D 22) PWM 2A
 //                         +--------+
 //
